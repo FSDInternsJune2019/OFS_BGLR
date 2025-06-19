@@ -1,0 +1,1 @@
+https://blogs.oracle.com/developers/post/deploying-a-simple-oracle-jet-application-on-oracle-cloud-to-make-it-available-on-internet
