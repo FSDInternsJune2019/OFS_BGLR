@@ -1,0 +1,11 @@
+Oracle Database 19c Installation On Oracle Linux 8 (OL8)
+
+https://oracle-base.com/articles/19c/oracle-db-19c-installation-on-oracle-linux-8
+
+https://oracle-base.com/articles/linux/docker-install-docker-on-oracle-linux-ol8
+
+Docker : Install Docker on Oracle Linux 8 (OL8)
+
+Install kubectl on Linux
+
+Install and Set Up kubectl on Linux
