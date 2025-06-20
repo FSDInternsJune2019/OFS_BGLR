@@ -1,0 +1,16 @@
+1. Install Oracle Database 19c , setup only
+2. Go to apps, Oracle Database 19c --Database Configuration Assistant--create database
+3. Go to apps, Oracle Database 19c --Net configuration Assistant--Create Listener,Configure SID
+4. go to command prompt:
+
+Type-> sqlplus /nolog
+Type-> conn /as sysdba
+Type-> create user hr identified by hr account unlock;
+Type-> grant sysdba to hr;
+Type->@C:\Users\Dell\Downloads\db-sample-schemas-23.3\db-sample-schemas-23.3\human_resources\hr_install.sql (change path according to your system)
+5. In SQL Developer ,Oracle Connection
+
+username: hr
+password:hr
+port:1521
+SID: orcl
