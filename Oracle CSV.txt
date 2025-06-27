@@ -1,0 +1,11 @@
+LOAD DATA
+INFILE 'path_to_your_file.csv'
+INTO TABLE your_table_name
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+(
+column1,
+column2,
+column3
+)
+
+sqlldr userid=your_username/your_password@your_database CONTROL=path_to_control_file.ctl
