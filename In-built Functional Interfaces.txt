@@ -1,0 +1,196 @@
+In-built Functional Interfaces
+
+java.util.function
+
+1. Consumer
+
+@FunctionalInterface
+public interface Consumer<T>{
+
+void accept(T t);
+
+}
+
+2. Supplier
+
+package java.util.function;
+
+@FunctionalInterface
+public interface Supplier<T>{
+
+T get();
+
+}
+
+3. Predicate
+
+package java.util.function;
+
+@FunctionalInterface
+public interface Predicate<T>{
+
+Boolean test(T t);
+
+}
+
+
+4. Function
+
+package java.util.function;
+
+@FunctionalInterface
+public interface Function<T,R>{
+R apply(T t);
+
+}
+
+
+API Design
+
+Design to interface,not implementation
+
+public interface Intf_V1{
+
+void x();
+default void y(){}
+
+}
+
+
+
+//implementer-1
+
+class Intf_V1Impl implements Intf_V1{
+
+public void x(){}
+public void y(){xxxxx}
+
+}
+
+//implementer-2
+
+class Intf_V1Imp2 implements Intf_V1{
+
+public void x(){}
+
+
+}
+
+
+========================
+
+public interface Intf{
+
+void x();
+public static void doOperation(Intf[] intf){
+
+}
+
+}
+
+public IntfImpl1 implements Intf{
+void x(){}
+}
+
+public IntfImpl2 implements Intf{
+void x(){}
+}
+
+
+===========================================================
+
+class BoxOfString{
+
+private String data;
+
+public void setData(String data){
+this.data=data;
+}
+
+public String getData(){
+return data;
+}
+
+
+}
+
+===============================================================
+
+class BoxOfObject{
+
+private Object data;
+
+public void setData(Object data){
+this.data=data;
+}
+
+public Object getData(){
+return data;
+}
+}
+
+=======================================================
+
+BoxOfObject box=new BoxOfObject();
+box.setData("sabbir");//unchecked
+
+String data=(String)box.getData();
+
+Integer data=(Integer)box.getData();//ClassCastException
+
+if(box.getData() instanceof String){
+String data=(String)box.getData();}
+
+if(box.getData() instanceof Integer){
+Integer data=(Integer)box.getData();
+}
+
+===================================================================
+
+
+class Box<T>{
+private T data;
+
+public void setData(T data){
+this.data=data;
+}
+
+public T getData(){
+return data;
+}
+
+}
+
+Box<String> boxOfString=new Box<>();
+boxOfString.setData("sabbir");
+boxOfString.setData(10);//Error
+
+String data=boxOfString.getData();
+
+java.util.stream
+
+data sources===Object===e==Stream==op1======op2=====op2========operated elements
+
+1. Intermediate operation: filter(),map(),peek()..........
+2. Terminal operation: count(),sum(),collect()....
+3. Short circuit operation: findFirst(),allMatch()...............
+
+
+String[] names={"sabbir","amit","rakesh"};
+
+Arrays
+.stream(names)
+.filter((name)->name.startsWith("a"))
+.filter((name)->name.length>3)
+
+
+
+
+
+
+
+
+
+
+
+
