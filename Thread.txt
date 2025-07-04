@@ -1,0 +1,35 @@
+1. Thread does not exists
+2. Thread is born
+3. Thread is put in runnable state
+4. Thread is running
+5. Thread is blocked
+6. Thread is Waiting
+7. Thread is Time Waiting
+8. Thread is Terminated
+
+T2
+synchronized(o){
+
+
+}
+
+T1
+
+
+
+
+
+
+
+Java Thread Scheduler
+
+T1---Runnable  7
+T2---Runnable  3
+
+1. First come first serve alogorithmn
+Arrival time & priority
+
+
+2. Time-slicing
+
+Thread Scheduler --->T1----> 2ms CPU time
