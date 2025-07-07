@@ -1,0 +1,1 @@
+wlst.cmd C:\Oracle\Middleware\Oracle_Home\wlserver\server\bin\remote_console_deployment.py t3://localhost:7001 weblogic < password.txt
