@@ -1,0 +1,57 @@
+1.	To access OU SGD, navigate to http://ouconnect.oracle.com.
+2.	Select Log in link.
+o	Enter in user name: 98794018.user01 ... 98794018.user30
+Enter in password: Ghy2K9s8MT (same for all users)
+3.	Once connected, follow the lab exercises provided in the e-kit.
+
+
+Before you log into OU SGD, ensure the following requirements are met:
+4.	JavaScript software is enabled in your browser
+5.	Cookies are enabled for your browser
+6.	Java technology is enabled in your browser
+*Java Plug-in software versions 1.7 and 1.8 are supported as a plug-in for Java technology.
+
+
+
+Your GESDB Event Id is, 98794018
+
+The default credentials are :
+•	oracle user password is OU98794018 (OU<GESDB Event ID>)
+•	root user password is OU98794118 (OU<GESDB Event ID+100>)
+
+
+
+John- 10.237.4.97
+Ayushi-10.237.10.245
+Kanishk-10.237.9.137
+Nimesh-10.237.2.27
+Shivaditya-10.237.5.56
+Nyati-10.237.3.8
+Shrini-10.237.10.193
+Anjana-10.237.0.210
+Varsha-10.237.8.189
+Jyoti-10.237.0.242
+Charan-10.237.14.76
+Yugant-10.237.13.249
+Amitesh-10.237.3.228
+Arkam-10.237.3.222
+Harsheet-10.237.10.220
+
+===================================================================
+10.237.14.159
+10.237.9.212
+10.237.10.203
+
+
+
+
+
+
+
+
+
+
+
+
+
+
