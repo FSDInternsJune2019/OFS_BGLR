@@ -1,0 +1,17 @@
+Understand Dependency Injection(DI)---Design Pattern
+Inversion of control (IOC)---Design principle
+
+Spring core with XML
+Spring core with Annotation--@Component,@Controller,@Service,@Repository,@Autowired,@Qualifier
+Spring core with java Configuration-@Configuration,@Bean,@PropertySource,@Value,@Import
+
+
+
+
+
+
+Spring Rest,Spring Security,Spring ORM
+Spring web Spring MVC Spring AOP, Spring JDBC
+Spring core-DI
+
+Spring Boot
