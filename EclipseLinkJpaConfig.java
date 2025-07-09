@@ -15,10 +15,13 @@ import org.springframework.orm.jpa.vendor.AbstractJpaVendorAdapter;
 import org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.jta.JtaTransactionManager;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories("com.oracle.repository")
+@EntityScan("com.oracle.entities")
 public class EclipseLinkJpaConfig extends JpaBaseConfiguration {
 
   protected EclipseLinkJpaConfig(DataSource dataSource, JpaProperties properties,
