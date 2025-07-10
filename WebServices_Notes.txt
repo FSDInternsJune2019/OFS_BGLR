@@ -1,0 +1,131 @@
+Web Services
+
+
+Business Services available over the web---Web service
+
+Organization
+    Departments
+       Accounts---.net,architectures,deployed servers
+       Travel
+       Project Management
+       HR----- java,architectures,deployed servers
+
+
+Hetereogenous environments
+
+JEE(Java Enterprise Edition)---JAX-WS specification---SOAP(Simple Object Access Protocol)
+
+
+
+Publisher Of Service(Accounts App)------UDDI Registry---WSDL---Consumer of Service(HR App)
+
+
+Web Service Definition Language---XML
+
+
+Consumer---SOAP Request(XML)----SOAP Response(XML)----Publisher
+
+
+WSDL----Top-Down---Web Service
+Java Webserice--Botton Up---WSDL
+
+
+Client--UI(JVM)-----Lookup----------RMI Registry--------Bind-JNDI----------Server(JVM)<---->Database
+
+javax.ws
+
+    @WebService
+    @WebMethod
+    @WebParam
+
+WS-Security
+
+
+in 2000, Roy Fielding coined term--REST---Representation State Transfer architecture style
+
+
+Client Application-----Http Request--- Http Response(XML,JSON)---Server Application--Resource(Object,Media etc)
+
+ Rest Constraints
+
+1. Uniform Interface
+Client Application---Http Request------->UI Layer(Interface,InterfaceImpl)<---->Business Layer(Interface,InterfaceImpl)<--->Data Layer(Interface,InterfaceImpl)<------>Database
+
+2. Stateless
+
+3. API Versioning
+
+4. Security
+
+5. Caching
+
+JEE-5----JAX-WS--SOAP Webservice
+JEE7-----JAX-RS--Restful webservice
+             Apache jersey, RestEasy, Spring REST
+
+
+Thymeleaf--page templating technology---dynamic web pages
+
+
+
+EmployeeRESTAPI---Spring Boot 3.5.3
+                        Spring Boot Parent 3.5.3
+                           Spring Boot Web 3.5.3
+                                      Embedded Tomcat
+                                      REST API
+                                      Apache Jackson
+
+@SpringBootApplication---Bootstrap class---Spring Boot application starts
+
+@SpringBootApplication
+   @EnableAutoConfiguration
+   @Configuration
+   @ComponentScan
+
+SpringApplication.run(EmployeeRestapiApplication.class, args);
+  Auto-configuration
+  IOC Container--DI
+  Start Embedded Tomcat
+  DispatcherServlet
+                                      
+
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
