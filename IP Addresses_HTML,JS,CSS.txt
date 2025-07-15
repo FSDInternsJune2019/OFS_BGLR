@@ -1,0 +1,180 @@
+
+
+Developing Web Applications with JavaScript, HTML5, and CSS LVC
+
+
+John- 
+
+Event ID 98789579
+User - 98789579-user11
+VNC access: 132.145.74.119:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+Ayushi-
+
+Event ID 98789579
+User - 98789579-user15
+VNC access: 140.238.79.62:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+
+
+Kanishk-
+
+Event ID 98789579
+User - 98789579-user04
+VNC access: 132.145.46.225:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+
+Nimesh-
+
+Event ID 98789579
+User - 98789579-user01
+VNC access: 140.238.92.249:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+Shivaditya-
+
+Event ID 98789579
+User - 98789579-user02
+VNC access: 140.238.79.106:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+
+Nyati-
+
+Event ID 98789579
+User - 98789579-user08
+VNC access: 132.145.72.34:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+Shrini-
+
+Event ID 98789579
+User - 98789579-user09
+VNC access: 132.145.42.64:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+Anjana-
+
+Event ID 98789579
+User - 98789579-user03
+VNC access: 132.145.42.190:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+Varsha-
+
+Event ID 98789579
+User - 98789579-user13
+VNC access: 140.238.75.174:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+Jyoti-
+
+Event ID 98789579
+User - 98789579-user07
+VNC access: 132.145.45.52:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+Charan-
+
+Event ID 98789579
+User - 98789579-user05
+VNC access: 132.145.73.93:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+Yugant-
+
+Event ID 98789579
+User - 98789579-user18
+VNC access: 132.145.73.80:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+Amitesh-
+
+Event ID 98789579
+User - 98789579-user14
+VNC access: 132.145.75.119:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+Arkam-
+
+Event ID 98789579
+User - 98789579-user10
+VNC access: 140.238.92.52:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+Harsheet-
+
+Event ID 98789579
+User - 98789579-user12
+VNC access: 140.238.73.160:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+================Additional=====================================
+
+Event ID 98789579
+User - 98789579-user16
+VNC access: 140.238.78.63:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+Event ID 98789579
+User - 98789579-user17
+VNC access: 132.145.46.251:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
+
+
+Event ID 98789579
+User - 98789579-user06
+VNC access: 132.145.74.127:5901
+VNC password: 98789579
+O.S. username: oracle
+O.S. password: OU98789579
