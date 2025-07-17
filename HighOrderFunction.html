@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<script>
+function sum(a,b){
+    return a+b;
+}
+
+function myHighOrderFuncOne(no1,no2,myFunc){
+    //xxxxxx
+    return myFunc(no1,no2);
+}
+
+function myHighOrderFuncTwo(no1,no2,myFunc){
+    //xxxxx
+
+    return function(){
+        return myFunc(no1,no2);
+    }
+}
+
+console.log(myHighOrderFuncOne(10,20,sum));
+
+let returnFunc=myHighOrderFuncTwo(30,40,sum);
+console.log(returnFunc());
+</script>
+</html>
