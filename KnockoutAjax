@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Form</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout-validation/2.0.3/knockout.validation.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>    
+</head>
+    <body>
+    <form data-bind="submit: submitForm">
+
+        <table>
+            <tr>
+                <td>Emp Id:</td>
+                <td>  <input type="text" data-bind="value: empId" placeholder="Emp Id" /></td>
+            </tr>
+
+              <tr>
+                <td>Emp Name:</td>
+                <td>  <input type="text" data-bind="value: empName" placeholder="Emp Name" /></td>
+            </tr>
+
+              <tr>
+                <td>Emp Salary:</td>
+                <td>  <input type="number" data-bind="value: empSalary" placeholder="Emp Salary" /></td>
+            </tr>
+
+              <tr>
+                <td>Emp Designation:</td>
+                <td>  <input type="text" data-bind="value: empDesignation" placeholder="Emp Designation" /></td>
+            </tr>
+        </table>
+  <button type="submit">Submit</button>
+</form>
+
+
+    <script>
+function employeeViewModel(){
+self.empId=ko.observable(0).extend({ required: true }),
+    self.empName=ko.observable('').extend({ required: true ,pattern: {
+    params: "^[a-zA-Z\\s]+$",
+    message: "Only letters and spaces are allowed."
+  }
+}),
+    self.empSalary=ko.observable(0).extend({required:true,  
+  min: {
+    params: 0.01,
+    message: "Salary must be a positive number."
+  }
+}),
+    self.empDesignation=ko.observable('').extend({required:true})
+    self.errors = ko.validation.group(self);
+
+self.submitForm = function () {
+if (self.errors().length === 0) {
+
+    var payload = {
+    empId: self.empId(),
+    empName: self.empName(),
+    empSalary: self.empSalary(),
+    empDesignation: self.empDesignation()
+  };
+
+  $.ajax({
+    type: "POST",
+    url: "http://localhost:8089/api/employees",
+    data: JSON.stringify(payload),
+    contentType: "application/json"
+  }).done(function (response) {
+    console.log("Server response:", response);
+  });
+  } else {
+    self.errors.showAllMessages();
+  }
+  };
+}
+ko.applyBindings(employeeViewModel,document.body);
+
+</script>
+
+    </body>
+</html>
