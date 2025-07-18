@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Form</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+    </head>
+    <body>
+    <form data-bind="submit: submitForm">
+
+        <table>
+            <tr>
+                <td>Emp Id:</td>
+                <td>  <input type="text" data-bind="value: empId" placeholder="Emp Id" /></td>
+            </tr>
+
+              <tr>
+                <td>Emp Name:</td>
+                <td>  <input type="text" data-bind="value: empName" placeholder="Emp Name" /></td>
+            </tr>
+
+              <tr>
+                <td>Emp Salary:</td>
+                <td>  <input type="number" data-bind="value: empSalary" placeholder="Emp Salary" /></td>
+            </tr>
+
+              <tr>
+                <td>Emp Designation:</td>
+                <td>  <input type="text" data-bind="value: empDesignation" placeholder="Emp Designation" /></td>
+            </tr>
+        </table>
+  <button type="submit">Submit</button>
+</form>
+
+    </body>
+
+    <script>
+var employeeViewModel = {
+    empId: ko.observable(0),
+    empName: ko.observable(''),
+    empSalary:ko.observable(0),
+    empDesignation:ko.observable('')
+};
+
+self.submitForm = function () {
+console.log('Emp Id:'+employeeViewModel.empId());
+console.log('Emp Name:'+employeeViewModel.empName());
+console.log('Emp Salary:'+employeeViewModel.empSalary());
+console.log('Emp Designation:'+employeeViewModel.empDesignation());
+  };
+
+
+
+
+
+
+
+ko.applyBindings(employeeViewModel);
+
+</script>
+</html>
