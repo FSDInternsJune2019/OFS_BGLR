@@ -1,0 +1,16 @@
+config.json
+{
+  "apiBaseUrl": "http://localhost:8099"
+}
+
+define([
+  'require',
+  'ojs/ojcore',
+  'knockout',
+  'text!resources/config.json'
+], function (require, oj, ko, configText) {
+  const config = JSON.parse(configText);
+  const apiUrl = config.apiBaseUrl;
+
+  // Use apiUrl 
+});
